@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dehati Super Mart Voting</title>
+<style>
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #f4f7f4;
+  padding: 25px 12px;
+}
+.card {
+  background: white;
+  max-width: 420px;
+  margin: 30px auto;
+  padding: 25px 15px;
+  border-radius: 15px;
+}
+h1 { color: #16803c; }
+button {
+  padding: 14px 30px;
+  margin: 10px;
+  border: 0;
+  border-radius: 8px;
+  color: white;
+  font-size: 18px;
+}
+.yes { background: #16803c; }
+.no { background: #d62828; }
+p { color: #444; }
+</style>
+</head>
+<body>
+<div class="card">
+  <h1>Dehati Super Mart</h1>
+  <h2>Aapki Rai Hamare Liye Zaroori Hai!</h2>
+  <p>Kya aap apne gaon mein Dehati Super Mart chahte hain?</p>
+  <button class="yes" onclick="vote('YES')">YES</button>
+  <button class="no" onclick="vote('NO')">NO</button>
+  <p id="msg"></p>
+</div>
+<script>
+function vote(choice) {
+  document.getElementById("msg").textContent =
+    "Aapne " + choice + " chuna hai. Dhanyavaad!";
+}
+</script>
+</body>
+</html>
